@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Likes page</title>
+</head>
+<body>
+    <output>
+        {% block content %}
+
+            {
+                "error": {{ error }},
+                "data": "{{ feedback }}",
+                "error_message": {{ error_message }}
+            }
+
+        {% endblock %}
+    </output>
+    </body>
+</html>
